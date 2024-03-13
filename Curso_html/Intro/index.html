@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera Web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Este es mi primer parrafo</p>
+    <p>Este es mi segundo parrafo</p>
+    <hr> 
+    <b>Negrita</b>
+    <br>
+    <i>italica</i>
+    <br>
+    <strike>Tachada</strike>
+    <br>
+    <small>Chiquita</small>
+
+    <h2>Nuevo Titulo</h2>
+    <p>
+        Este es un texto <span style="color:aqua">mucho mas largo</span> 
+        para mostrar <br>
+        <br>
+        la etiqueta span! 
+    </p>
+    <!-- Asi se escribe un comentario en HTML y no 
+    va a aparecer en el explorador-->   
+    <a href="https://www.google.com" target="-blank"> Ir a google </a>
+    <br>
+    <img src="img/amplicolores.jpg" width="400" />
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola bits</th>
+                <td>Gratis</th>
+            </tr>
+            <tr>
+                <td>Pola</th>
+                <td>4000</th>
+            </tr>
+            <tr>
+                <td>Pola Litro</th>
+                <td>7000</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 11000</td>
+        </tfoot>
+    </table>
+
+    <!-- Lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="NombrePorDefecto" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="ApellidoPorDefecto" type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">ComentarioPorDefecto</textarea>
+        <br>
+        <button type="button"><img width="50" src="img\amplicolores.jpg"/>Tipo Boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+</body>
+</html> 
