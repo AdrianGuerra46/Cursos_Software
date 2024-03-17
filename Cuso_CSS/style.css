@@ -1,0 +1,59 @@
+#titulo{  /* Asi se estilisa un id */
+    color:blueviolet;
+}
+
+
+.texto{  /* Asi se estilisa una clase */
+    color:brown;
+}
+
+p.texto{   /* Asi indicamos que se estilizan todas las etiquetas p que tienen la clase "texto" */
+    color:rgb(11, 241, 126);
+}
+
+p.especial{
+    color:red;
+}
+
+div p { /* En todas las etiquetas p que esten dentro de un div */
+    color:aquamarine;
+}
+
+div h2, div h3 { /* Asi estiliso mas de un elemento */
+    color:gray;
+}
+
+*{   /* Asi seleccionamos TODOS los elementos del body, selector universal */ 
+    font-size: 24px;
+    color:black; 
+} 
+/* El selector Universal aplica propiedades SOLO si no hay sido definidas 
+por otros selectores*/
+/*
+Formas de asignar color
+.color{
+    color:#ff0000;
+}
+.color{
+    color:rgb(0, 0, 255);
+}
+*/
+.color{
+    /*border: 5px red inset;*/
+    /*
+    dotted
+    dashed
+    solid
+    souble
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+    border-style: solid; /* Asi asignamos estilo de borde sin tamano ni color*/
+    border-color: blue;
+    border-radius: 5px; /*Asi redondeamos el borde*/
+    border-width: 1px;
+}
