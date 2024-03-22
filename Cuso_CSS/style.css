@@ -55,5 +55,13 @@ Formas de asignar color
     border-style: solid; /* Asi asignamos estilo de borde sin tamano ni color*/
     border-color: blue;
     border-radius: 5px; /*Asi redondeamos el borde*/
-    border-width: 1px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color:rgba(0,0,0, 0.7);
+    /*opacity:0.3;*/
+    height: 300px;
+    background: #f00 url("Imagenes/coffee.png") repeat-y center bottom / 100px 100px;
+    background-size: 100px 100px;
 }
