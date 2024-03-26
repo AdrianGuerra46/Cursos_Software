@@ -1,55 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mi primera Web</title>
-    <style>
+<!-- Asi se escribe un comentario en HTML y no 
+    va a aparecer en el explorador--> 
+<!-- Todo lo que se realiza en HTML se hace con ETIQUETAS -->
+<!DOCTYPE html> <!-- Esta etiqueta le dice al navegador que el archivo es HTML5 -->
+<html> <!-- Lo que esté entre esta etiqueta, es el documento HTML -->
+<head> <!-- Es la primera de las dos partes en que se estructura un documento HTML, En la HEAD 
+        reside información acerca del documento, y generalmente no se ve cuando se navega por él-->
+    <title>Mi primera Web</title> <!-- Este es el titulo de la pagina (el que aparece en la pestaña del navegador) -->
+    <!-- La etiqueta style permite definir como se ven algunos elementos -->
+    <style> 
+
         table, th, td {
             border: 1px solid black;
-        }
-    </style>
+        } 
+    </style> <!-- En la etiqueta anterior definimos borde para las etiquetas table, th y td -->
 </head>
 <body>
-    <h1>Mi primer heading</h1>
+    <h1>Mi primer heading</h1> <!-- La etiqueta h# es para deifinir heading (titulos) y a mayor numero, más pequeño (subtitulo)-->
     <h2>Mi segundo heading</h2>
     <h3>Mi tercer heading</h3>
     <h4>Mi cuarto heading</h4>
     <h5>Mi quinto heading</h5>
     <h6>Mi sexto heading</h6>
-    <p>Este es mi primer parrafo</p>
+    <p>Este es mi primer parrafo</p> <!-- La etiqueta p es para definiir parrafos -->
     <p>Este es mi segundo parrafo</p>
-    <hr> 
-    <b>Negrita</b>
+    <hr> <!-- La etiqueta hr representa un cambio de tema entre parrafos -->
+    <b>Negrita</b> <!-- La etiqueta b es para escribir en negrita-->
+    <br> <!-- La etiqueta br es para hacer un salto de linea-->
+    <i>italica</i> <!-- La etiqueta i es para escribir en italica-->
     <br>
-    <i>italica</i>
+    <strike>Tachada</strike> <!-- La etiqueta strike es para tachar texto-->
     <br>
-    <strike>Tachada</strike>
-    <br>
-    <small>Chiquita</small>
+    <small>Chiquita</small> <!-- La etiqueta small es para escribir con una talla más pequeña-->
 
     <h2>Nuevo Titulo</h2>
     <p>
         Este es un texto <span style="color:aqua">mucho mas largo</span> 
-        para mostrar <br>
+        para mostrar <br> <!-- La etiqueta span envuelven secciones de texto con fines de estilo o para agregar atributos a una sección de texto-->
         <br>
         la etiqueta span! 
     </p>
-    <!-- Asi se escribe un comentario en HTML y no 
-    va a aparecer en el explorador-->   
-    <a href="https://www.google.com" target="-blank"> Ir a google </a>
+    <a href="https://www.google.com" target="-blank"> Ir a google </a> <!-- La etiqueta a (anchor) es para crear links-->
     <br>
-    <img src="img/amplicolores.jpg" width="400" />
+    <img src="img/amplicolores.jpg" width="400" /> <!-- La etiqueta img es para incluir imagenes tanto en local como con link remoto-->
 
-    <table style="width: 500px;">
-        <thead>
-            <tr>
-                <th>Precio</th>
+    <table style="width: 500px;"> <!-- La etiqueta table es para crear tablas-->
+        <thead> <!-- Defino las cabeceras de la tabla-->
+            <tr> <!-- (table row) crea una fila de celdas en la tabla-->
+                <th>Precio</th> <!-- con th defino el encabezado de un grupo de celdas-->
                 <th>Producto</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody> <!-- Defino el cuerpo de la tabla-->
             <tr>
-                <td>Hola bits</th>
-                <td>Gratis</th>
+                <td>Hola bits</td> <!-- td define la celda de una tabla que contiene datos-->
+                <td>Gratis</td> 
             </tr>
             <tr>
                 <td>Pola</th>
@@ -60,21 +64,21 @@
                 <td>7000</th>
             </tr>
         </tbody>
-        <tfoot>
+        <tfoot> <!-- tfoot se utiliza para definir un pie de tabla -->
             <td></td>
             <td>Total: 11000</td>
         </tfoot>
     </table>
 
-    <!-- Lista no ordenada -->
+    <!-- Lista no ordenada (unorder list) -->
     <ul>
-        <li>Elemento 1</li>
+        <li>Elemento 1</li> <!-- li item de lista (list item) -->
         <li>Elemento 2</li>
         <li>Elemento 3</li>
         <li>Elemento 4</li>
     </ul>
 
-    <!-- Lista ordenada -->
+    <!-- Lista ordenada (orderlist)-->
     <ol>
         <li>Elemento 1</li>
         <li>Elemento 2</li>
@@ -92,7 +96,7 @@
 
 
 
-    <form action="/formulario" method="post">
+    <form action="/formulario" method="post"> <!-- form me permite crear un formulario-->
         <label for="nombre">Nombre</label>
         <input value="NombrePorDefecto" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre"/>
         <br>
