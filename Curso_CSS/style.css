@@ -59,7 +59,7 @@ Formas de asignar color
 }
 
 #fondo {
-    background-color:rgba(0,0,0, 0.7);
+    background-color:rgba(0,0,0, 0.7); 
     /*opacity:0.3;*/
     height: 300px;
     background: #f00 url("Imagenes/coffee.png") repeat-y center bottom / 100px 100px;
@@ -178,7 +178,7 @@ span {
     background-color: red;
 }
 
-.center{
+.center{ /* Esta es la forma correcta de centrar un elemento, es importante darle un ancho*/
     padding: 50px 0;
     text-align: center;
     width: 200px;
